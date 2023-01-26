@@ -1,0 +1,412 @@
+@font-face {
+    font-family: "Bender";
+    src: url(/fonts/bender/bender/Jovanny\ Lemonad\ -\ Bender-Light.otf);
+}
+@font-face {
+    font-family: "Neusa";
+    src: url(/fonts/Neusa/Neusa-Medium.ttf );
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    font-family: "Bender";
+    /* font-family: "Neusa"; */
+    font-size: 15px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.container--two{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.header{
+    border-bottom: 2px solid #9A8866;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0px 10px 10px #9a88666e;
+}
+
+.header_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+.nav div{
+    margin-top: 13.7px;
+    text-align: center;
+}
+
+.nav_link{
+    margin-right: 25px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 18px;
+    color: #9A8866;
+    transition: .2s;
+}
+
+.nav_link:hover{
+    border-bottom: 2px solid #9A8866;
+}
+
+.services img{
+    cursor: pointer; 
+}
+
+.btn_serv{
+    position: relative;
+    padding: 8px 7px;
+    padding-right: 35px;
+    border-radius: 5px;
+    background-color: #4B3E26;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #9A8866;
+    cursor: pointer;
+}
+
+.btn_serv:hover:after{
+    box-shadow: 0px 0px 10px red;
+    background-color: red;
+    transition: .5s;
+}
+
+.btn_serv::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+    right: 25px;
+    top: 0;
+}
+.btn_serv::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(9, 255, 0);
+    box-shadow: 0px 0px 10px green;
+    right: 8px;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: 36%;
+}
+
+.phrases_block{
+    margin-top: 207px;
+    padding-bottom: 172px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.phrases_item{
+    margin-top: 50px;
+}
+
+.text_phras{
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.phrases span {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #9A8866;
+    transition: .2s linear;
+}
+
+.phrases span:hover{
+    color: gold;
+}
+
+.about_game{
+    padding-top: 174px;
+    font-family: "Neusa";
+    background-image: url(/img/about_bg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1070px;
+    background-position: center;
+}
+
+.title__about_game{
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #9A8866;
+    text-shadow: 0px 0px 6px #B88C39;
+}
+.get_ready{
+    margin-top: 320px;
+    text-align: center;
+}
+
+.gen_info__about_game{
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    margin-top: 56px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: white;
+}
+
+.text__gen_info{
+    margin-bottom: 30px;
+}
+
+.title_gameplay{
+    margin: 140px 0px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #9A8866;
+    text-shadow: 0px 0px 6px #B88C39;
+}
+
+.block_cards_gameplay{
+    margin-top: 145px;
+}
+
+.card{
+    margin-bottom: 200px;
+}
+
+.img_card_title{
+    display: inline-flex;
+}
+
+.img_card_title li {
+    margin-bottom: 38px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.img_card_title ul {
+    display: table;
+    margin: 18px;
+}
+
+.photo_card{
+    width: 350px;
+    height: 197px;
+    margin: 14px;
+}
+
+.title_card{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4E9494;
+}
+
+.text_card{
+    padding: 14px;
+    width: 1000px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.block_setting {
+    margin-bottom: 203px;
+}
+
+.block_setting span{
+    color: #4E9494;
+}
+
+.title_setting{
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #9A8866;
+    text-shadow: 0px 0px 8px #9A8866;
+}
+
+.usec_wild{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+
+.text_usec_wild{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+}
+
+.text_usec{
+    margin-right: 80px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.text_wild{
+    margin-left: 80px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.merchants{
+    margin-bottom: 203px;
+    display: flex;
+    align-items: center;
+}
+
+.title_merchants{
+    margin-bottom: 83px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    color: #9A8866;
+    text-shadow: 0px 0px 8px #9A8866;
+}
+
+.text_merchants{
+    position: relative;
+    margin-bottom: 90px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.text_merchants::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #9A8866;
+    box-shadow: 0px 0px 10px #9A8866;
+    border-radius: 10px;
+    left: -20px;
+    top: 0;
+}
+
+.last_media{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.last_media img {
+    cursor: pointer;
+    margin-bottom: 70px;
+    transition: .2s linear;
+    opacity: .7;
+}
+
+.last_media img:hover{
+    opacity: 10;
+    filter: drop-shadow(0px 0px 10px #9A8866);
+}
+
+.more_none_archive{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.more_none{
+    padding: 15px 14px;
+    background: #9A8866;
+    border-radius: 5px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    color: #000000;
+    text-shadow: 0px 0px 8px #9A8866;
+    cursor: pointer;
+}
+
+.archive{
+    padding: 15px 26px;
+    background: #9A8866;
+    border-radius: 5px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    color: #000000;
+    text-shadow: 0px 0px 8px #9A8866;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 150px;
+}
+
+.footer div{
+    text-align: center;
+}
+
+.icons_footer{
+    margin-top: 65px;
+}
+.icons_footer img {
+    margin: 0px 40px;
+}
+
+.battlesgay{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_footer p, a {
+    text-align: left;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+
+
+#figure{
+    text-align: center;
+    display: none;
+}
